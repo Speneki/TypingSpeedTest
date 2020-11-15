@@ -34,8 +34,10 @@ quoteInputElement.addEventListener('input', () => {
             correct = false;
         }
     })
+    
     if (correct) {
-        const compliments = ["Nice!", "Good one!", "Got em.", "Bravo", "Nailed it!", "Way 2 go", "Nicely done", "Hell yeah", "Heck yeah", "Well, look at you!", "🤙🤙🤙", "👈😎👉", "🥳"];
+        const compliments = ["Nice!", "Good one!", "Got em.", "Bravo", "Nailed it!", "Way 2 go", "Nicely done",
+                             "Hell yeah", "Heck yeah", "Well, look at you!", "🤙🤙🤙", "👈😎👉", "🥳", "Woohoo!"];
         const random = Math.floor(Math.random() * compliments.length);
         complimentElement.innerText = compliments[random];
         getWPM();
