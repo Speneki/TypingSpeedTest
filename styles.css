@@ -78,3 +78,11 @@ body, .quote-input {
     color: red;
     text-decoration: underline;
 }
+
+.button {
+    position: absolute;
+    top: 32rem;
+    font-size: 1rem;
+    background-color: #f0db4f;
+    opacity: 0.5;
+}

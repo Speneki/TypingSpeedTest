@@ -34,7 +34,7 @@ quoteInputElement.addEventListener('input', () => {
             correct = false;
         }
     })
-    
+
     if (correct) {
         const compliments = ["Nice!", "Good one!", "Got em.", "Bravo", "Nailed it!", "Way 2 go", "Nicely done",
                              "Hell yeah", "Heck yeah", "Well, look at you!", "🤙🤙🤙", "👈😎👉", "🥳", "Woohoo!"];
@@ -64,7 +64,7 @@ async function getNextQuote() {
     })
 
     quoteInputElement.value = null;
-
+    clearInterval(myTimer);
 }
 
 let startTime;
@@ -88,7 +88,6 @@ function getWPM() {
     let num = wordCount * 60;
     let WPM = num / seconds;
     WPMElement.innerText = WPM.toFixed(2) + " WPM last round with " + mistakes + " mistakes.";
-    clearInterval(myTimer);
 }
 
 getNextQuote()
